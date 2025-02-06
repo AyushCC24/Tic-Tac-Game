@@ -25,3 +25,11 @@
     flex-wrap: wrap;
     height: 100vh;
 }
+
+.highlight {
+  background-color: yellow;  /* Highlights the square */
+  color: black;              /* Ensures the text is readable */
+  font-weight: bold;         /* Makes the text stand out */
+  border: 2px solid orange;  /* Gives a nice border effect */
+  transition: background-color 0.3s ease-in-out;
+}
