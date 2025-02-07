@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import clsx from 'clsx'
 import './App.css';
 
 function Square({ value, onSquareClick , className}) {
@@ -50,7 +51,7 @@ function Board({ xIsNext, squares, onPlay ,currentMove}) {
                               key={i * 3 + j}
                               value={squares[i * 3 + j]}
                               onSquareClick={() => handleClick(i * 3 + j)} 
-                              className = { isWinningSquare === true ? "highlight":""} 
+                              className = {clsx({"highlight" : isWinningSquare})} 
                     />
                   
                   })
